@@ -4,6 +4,56 @@ const results = document.getElementById("output");
 
 const romanNumerals = [
     {
+        number: 1,
+        val: "I",
+    },
+    {
+        number: 4,
+        val: "IV",
+    },
+    {
+        number: 5,
+        val: "V",
+    },
+    {
+        number: 9,
+        val: "IX",
+    },
+    {
+        number: 10,
+        val: "X",
+    },
+    {
+        number: 40,
+        val: "XL",
+    },
+    {
+        number: 50,
+        val: "L",
+    },
+    {
+        number: 90,
+        val: "XC",
+    },
+    {
+        number: 100,
+        val: "C",
+    },
+    {
+        number: 400,
+        val: "CD",
+    },
+    {
+        number: 500,
+        val: "D",
+    },
+    {
+        number: 900,
+        val: "CM",
+    },
+    {
+        number: 1000,
+        val: "M",
     },
 ];
 
