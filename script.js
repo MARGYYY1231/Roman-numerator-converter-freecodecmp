@@ -57,10 +57,23 @@ const romanNumerals = [
     },
 ];
 
-const convert = (input) => {
+const revRomanNumerals = romanNumerals.reverse();
 
+/**
+ * Converts umber to roman numeral.
+ * @param {*} input 
+ * @returns 
+ */
+const convert = (input) => {
+    if(input === 0){return '';}
+    const arr = revRomanNumerals.filter(num => num.number <= input);
+    const obj = arr[0];
+    return obj.val + convert(input - obj.number);
 };
 
+/**
+ * Checks the number input inputted by the user.
+ */
 const checkInput = () => {
     const numberInt = parseInt(numberInput.value);
     results.classList.remove("hidden");
@@ -73,7 +86,7 @@ const checkInput = () => {
     }else if(numberInt > 3999){
         results.textContent = "Please enter a number less than or equal to 3999";
     }else{
-        convert(numberInput);
+        results.textContent = convert(numberInt);
     }
 };
 
