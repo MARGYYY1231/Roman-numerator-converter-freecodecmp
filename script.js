@@ -60,7 +60,7 @@ const romanNumerals = [
 const revRomanNumerals = romanNumerals.reverse();
 
 /**
- * Converts umber to roman numeral.
+ * Converts number to roman numeral.
  * @param {*} input 
  * @returns 
  */
